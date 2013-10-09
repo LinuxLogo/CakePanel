@@ -21,7 +21,7 @@ $app = new \Slim\Slim(array(
 	'debug' => true,
 	'cookies.encrypt' => true,
 	'cookies.lifetime' => '20 minutes',
-	'cookies.secret_key' => 'eifhjvbndjaksf78r2ufihjkawyru82euqiegvbskre'
+	'cookies.secret_key' => 'ThisIsNotSoSecretSoChangeIt'
 ));
 $app->setName('MCPECake Daemon');
 if(file_exists(HOME.'init.lock'))
