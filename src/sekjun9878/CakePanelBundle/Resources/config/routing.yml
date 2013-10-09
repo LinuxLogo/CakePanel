@@ -1,0 +1,50 @@
+#Now non-critical routing
+sekjun9878_cake_panel_dashboard:
+    pattern:  /dashboard
+    defaults: { _controller: sekjun9878CakePanelBundle:Dashboard:dashboard }
+
+sekjun9878_cake_panel_servers:
+    pattern:  /servers
+    defaults: { _controller: sekjun9878CakePanelBundle:Servers:servers }
+
+sekjun9878_cake_panel_servers_create:
+    pattern:  /servers/create
+    defaults: { _controller: sekjun9878CakePanelBundle:Servers:createServer }
+
+sekjun9878_cake_panel_nodes:
+    pattern:  /nodes
+    defaults: { _controller: sekjun9878CakePanelBundle:Nodes:nodes }
+
+sekjun9878_cake_panel_nodes_add:
+    pattern:  /nodes/add
+    defaults: { _controller: sekjun9878CakePanelBundle:Nodes:addNode }
+
+sekjun9878_cake_panel_nodes_test:
+    pattern:  /nodes/{id}/test
+    defaults: { _controller: sekjun9878CakePanelBundle:Nodes:testNode }
+    requirements:
+        id:  \d+
+
+sekjun9878_cake_panel_nodes_remove:
+    pattern:  /nodes/{id}/remove
+    defaults: { _controller: sekjun9878CakePanelBundle:Nodes:removeNode }
+    requirements:
+        id:  \d+
+
+sekjun9878_cake_panel_panel:
+    pattern:  /panel/{id}
+    defaults: { _controller: sekjun9878CakePanelBundle:Panel:panel }
+    requirements:
+        id:  \d+
+
+sekjun9878_cake_panel_panel_players:
+    pattern:  /panel/{id}/players
+    defaults: { _controller: sekjun9878CakePanelBundle:Panel:players }
+    requirements:
+        id:  \d+
+
+sekjun9878_cake_panel_panel_action:
+    pattern:  /panel/{id}/action/{action}
+    defaults: { _controller: sekjun9878CakePanelBundle:Panel:action }
+    requirements:
+        id:  \d+

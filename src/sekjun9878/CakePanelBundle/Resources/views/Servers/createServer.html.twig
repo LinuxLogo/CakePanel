@@ -1,0 +1,18 @@
+{% extends "sekjun9878CakePanelBundle:Layouts:flatly.html.twig" %}
+
+{% block content %}
+    <div class='container'>
+        <div class='row'>
+            <div class='col-lg-2'>
+                {{ knp_menu_render('sekjun9878CakePanelBundle:ServersMenuBuilder:sideMenu', {'nav_type': 'stacked_pills', 'currentClass': 'active'}) }}
+            </div>
+            <div class='col-md-10'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        {{ form(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

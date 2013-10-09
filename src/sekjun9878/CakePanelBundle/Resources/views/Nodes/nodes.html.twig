@@ -1,0 +1,40 @@
+{% extends "sekjun9878CakePanelBundle:Layouts:flatly.html.twig" %}
+
+{% block content %}
+    <div class='container'>
+        <div class='row'>
+            <div class='col-lg-2'>
+                {{ knp_menu_render('sekjun9878CakePanelBundle:NodesMenuBuilder:sideMenu', {'nav_type': 'stacked_pills', 'currentClass': 'active'}) }}
+            </div>
+            <div class='col-md-10'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Domain</td>
+                                    <td>Port</td>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for node in nodes %}
+                                    <tr>
+                                        <td>{{ node.id }}</td>
+                                        <td class='success'>{{ node.domain }}</td>
+                                        <td>{{ node.port }}</td>
+                                        <td>
+                                                <a style='text-decoration:none;' href="/nodes/{{ node.id }}/test"><button type="submit" class="btn btn-success btn-xs">Test</button></a>
+                                                <a style='text-decoration:none;' href="/nodes/{{ node.id }}/remove"><button type="submit" class="btn btn-warning btn-xs">Remove</button></a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+name: sekjun9878-info
+framework:
+    type: php
+    document-root: web
+services:
+    ${name}-postgresql: postgresql
+    ${name}-cache: memcached
+hooks:
+    post-staging:
+        - echo "session.save_handler = memcached" > "$STACKATO_APP_ROOT"/apache/php/sessions.ini
+        - echo "session.save_path = $MEMCACHE_URL" >> "$STACKATO_APP_ROOT"/apache/php/sessions.ini
