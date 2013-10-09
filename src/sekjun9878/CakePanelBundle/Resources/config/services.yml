@@ -1,7 +1,0 @@
-parameters:
-#    sekjun9878_cake_panel.example.class: sekjun9878\CakePanelBundle\Example
-
-services:
-#    sekjun9878_cake_panel.example:
-#        class: %sekjun9878_cake_panel.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

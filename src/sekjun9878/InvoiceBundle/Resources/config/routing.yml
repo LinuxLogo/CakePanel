@@ -1,3 +1,0 @@
-sekjun9878_invoice_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: sekjun9878InvoiceBundle:Default:index }
