@@ -1,0 +1,15 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class='row'>
+    <div class='col-lg-2'>
+        {{ knp_menu_render('sekjun9878CakePanelBundle:SecurityMenuBuilder:sideMenu', {'nav_type': 'stacked_pills', 'currentClass': 'active'}) }}
+    </div>
+    <div class='col-lg-10'>
+        <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+            {{ form_widget(form) }}
+            <div>
+                <input class='btn btn-primary' type="submit" value="{{ 'registration.submit'|trans }}" />
+            </div>
+        </form>
+    </div>
+</div>

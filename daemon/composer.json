@@ -1,0 +1,16 @@
+{
+    "name": "sekjun9878/CakePanelDaemon",
+    "description": "A Daemon for CakePanel",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Michael Yoo",
+            "email": "sekjun9878"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.3.2",
+        "mustangostang/spyc": "0.5.1",
+        "slim/extras": "2.0.3"
+    }
+}

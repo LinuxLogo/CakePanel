@@ -1,0 +1,150 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.3.2",
+        "version_normalized": "2.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim.git",
+            "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim/zipball/a9abd36d53d9c1f7732f490f8e809e55045307b3",
+            "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mcrypt": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-09-29 19:46:31",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "mustangostang/spyc",
+        "version": "0.5.1",
+        "version_normalized": "0.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mustangostang/spyc.git",
+            "reference": "dc4785b4d7227fd9905e086d499fb8abfadf9977"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mustangostang/spyc/zipball/dc4785b4d7227fd9905e086d499fb8abfadf9977",
+            "reference": "dc4785b4d7227fd9905e086d499fb8abfadf9977",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1"
+        },
+        "time": "2013-02-21 10:52:01",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.5.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "Spyc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT License"
+        ],
+        "authors": [
+            {
+                "name": "mustangostang",
+                "email": "vlad.andersen@gmail.com"
+            }
+        ],
+        "description": "A simple YAML loader/dumper class for PHP",
+        "homepage": "https://github.com/mustangostang/spyc/",
+        "keywords": [
+            "spyc",
+            "yaml",
+            "yml"
+        ]
+    },
+    {
+        "name": "slim/extras",
+        "version": "2.0.3",
+        "version_normalized": "2.0.3.0",
+        "target-dir": "Slim/Extras",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim-Extras.git",
+            "reference": "a022ed23dae94e164000acd891e3394d903f9623"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim-Extras/zipball/a022ed23dae94e164000acd891e3394d903f9623",
+            "reference": "a022ed23dae94e164000acd891e3394d903f9623",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.0.0"
+        },
+        "time": "2013-01-07 17:56:10",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_Extensions_": "Views/Extension/",
+                "Slim\\Extras": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Andrew Smith",
+                "email": "a.smith@silentworks.co.uk",
+                "homepage": "http://thoughts.silentworks.co.uk/"
+            },
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Extras package for the Slim Framework",
+        "homepage": "http://github.com/codeguy/Slim-Extras",
+        "keywords": [
+            "extensions",
+            "middleware",
+            "templating"
+        ]
+    }
+]
